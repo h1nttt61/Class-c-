@@ -16,12 +16,15 @@ class Person
 
 int main()
 {
-	Person person;
+	/*Person person;
 	person.name = "Vitaly";
 	person.age = 18;
-	person.print();
-
-
+	person.print();*/
+	Person person;
+	Person* prt = &person;
+	prt->age = 19;
+	prt->name = "Vitaly";
+	prt->print();
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
