@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes4_friend.cpp">
+    <ClCompile Include="Classes5_static.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
