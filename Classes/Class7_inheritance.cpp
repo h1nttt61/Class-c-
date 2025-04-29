@@ -32,13 +32,18 @@ private:
 };
 */
 //с базовым констурктором
-class Person
+class Person //final - запрет наследования
 {
 public:
 	Person(std::string name, unsigned age)
 	{
 		this->name = name;
 		this->age = age;
+		std::cout << "Account created" << std::endl;
+	}
+	~Person()
+	{
+		std::cout << "Account deleted" << std::endl;
 	}
 	void print() const
 	{
@@ -56,6 +61,11 @@ public:
 	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
 	{
 		this->company = company;
+		std::cout << "Employee created" << std::endl;
+	}
+	~Employee()
+	{
+		std::cout << "Employee deleted" << std::endl;
 	}
 	//конструктор копирования класса Employee
 	//вызов
