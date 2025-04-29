@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Class8_Hide_class_funcs.cpp">
+    <ClCompile Include="Classes8_hide_args.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
