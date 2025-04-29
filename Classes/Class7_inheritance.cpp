@@ -49,16 +49,31 @@ private:
 	unsigned age;
 };
 
+
 class Employee : public Person
 {
 public:
-	using Person::Person;
+	Employee(std::string name, unsigned age, std::string company) : Person(name, age)
+	{
+		this->company = company;
+	}
+	//конструктор копирования класса Employee
+	//вызов
+	Employee(const Employee& employee) : Person(employee)
+	{
+		company = employee.company;
+	}
+private:
+	std::string company;
 };
+//class Employee : public Person
+//{
+//public:
+//	using Person::Person;
+//};
 void main() 
 {
-	Person person{ "Tom", 38 };
-	person.print();     // Name: Tom       Age: 38
-
-	Employee employee{ "Bob", 42 };
-	employee.print();   // Name: Bob       Age: 42
+	Employee tom{ "Tom", 38, "Google" };
+	Employee tomas{ tom };    // вызываем конструктор копирования
+	tomas.print(); 
 }
