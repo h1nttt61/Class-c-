@@ -29,10 +29,10 @@ private:
 void main()
 {
 	Employee bob{ "Bob", "Google" };
-
+ // преобразуем в указатель на базовый тип
 	Person* person{ &bob };
 	person->print();
-
+// преобразуем ссылку производного класса в ссылку базового класса
 	Employee sam{ "Sam", "T-bank" };
 	Person& person2{ sam };
 	person2.print();
@@ -48,3 +48,4 @@ void main()
 	std::unique_ptr<Person> bob2{ std::make_unique<Employee>("Bob", "Google") };
 	bob2->print();
 }
+
