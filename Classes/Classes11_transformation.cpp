@@ -23,17 +23,17 @@ public:
 
 	}
 };
-
+//Преобразование явным образом через static_cast
 void main()
 {
 	Employee employee{ "Bob" };
 	employee.print();
 
-	Person person1{ static_cast<Person>(employee) };//����� ����������
+	Person person1{ static_cast<Person>(employee) };//через конструктор копирования
 	person1.print();
 
 	Person person2{ "Tom" };
-	person2 = static_cast<Person>(employee);//����� ������������
+	person2 = static_cast<Person>(employee);//через присваивание
 
 	person2.print();
 }
