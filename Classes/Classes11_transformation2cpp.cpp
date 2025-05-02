@@ -29,10 +29,10 @@ private:
 void main()
 {
 	Employee bob{ "Bob", "Google" };
-
+ // преобразуем в указатель на базовый тип
 	Person* person{ &bob };
 	person->print();
-
+// преобразуем ссылку производного класса в ссылку базового класса
 	Employee sam{ "Sam", "T-bank" };
 	Person& person2{ sam };
 	person2.print();
