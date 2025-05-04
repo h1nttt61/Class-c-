@@ -15,6 +15,28 @@ private:
 	unsigned pages;
 };
 
+class File
+{
+public:
+	File(unsigned size) : size{ size } {}
+	unsigned getSize() const { return size; }
+	virtual void print() const
+	{
+		std::cout << "Size: " << size << std::endl;
+	}
+private:
+	unsigned size;
+};
+
+class Ebook : public Book, public File
+{
+public:
+	Ebook(std::string title, unsigned pages, unsigned size) : Book{ title, pages }, File{ size } {}
+	void print() const override
+	{
+		std::cout << getTitle() << "\tPages: " << getPages() << "\tSize: " << getSize() << "Mb" << std::endl;
+	}
+};
 /*
 Есть два вида динамического приведения. 
 Первый — это преобразование от указателя на базовый класс к указателю на производный класс - так называемое нисхолящее преобразование или downcast
@@ -23,6 +45,10 @@ private:
 */
 int main()
 {
-
+	Ebook cppbook{ "About C++", 350, 6 };
+	Book* book = &cppbook;  // указывает на объект Ebook
+	// дdynamic cast Book to Ebook
+	Ebook* ebook{ dynamic_cast<Ebook*>(book) };
+	ebook->print();
 	return 0;
 }

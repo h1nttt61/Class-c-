@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes11_transformation2cpp.cpp">
-      <Filter>Файлы заголовков</Filter>
+    <ClCompile Include="Classes12_Dynamic_Cast.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
