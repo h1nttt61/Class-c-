@@ -49,10 +49,39 @@ public:
 */
 int main()
 {
-	Ebook cppbook{ "About C++", 350, 6 };
+	/*Ebook cppbook{"About C++", 350, 6};
 	Book* book = &cppbook;  // указывает на объект Ebook
 	// дdynamic cast Book to Ebook
 	Ebook* ebook{ dynamic_cast<Ebook*>(book) };
 	ebook->print();
-	return 0;
+	return 0;*/
+	/*Ebook cppbook{"About C++", 350, 6};
+	Book* book = &cppbook;  // указывает на объект Ebook
+	// динамическое преобразование из Book в File - crosscast
+	File* file{ dynamic_cast<File*>(book) };
+	file->print();*/
+
+	//Чтобы указывало на констату const
+
+	Book cppbook{ "About C++", 350 };
+	Book* book = &cppbook;  // указывает на объект Book
+	// динамическое преобразование из Book в File - crosscast
+	File* file{ dynamic_cast<File*>(book) };
+
+	// проверяем результат
+	if (file)    // если file !=nullptr
+	{
+		file->print();
+	}
+	else
+	{
+		std::cout << "The book is not a file" << std::endl;
+	}
+
+	/* Ссылки
+	Ebook cppbook{"About C++", 350, 6};
+	Book& book{ cppbook };  // ссылка на Ebook
+	// преобразуем в ссылку на Ebook
+	Ebook& file{ dynamic_cast<Ebook&>(book) };
+	file.print();*/
 }
