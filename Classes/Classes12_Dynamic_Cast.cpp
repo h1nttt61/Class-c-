@@ -3,6 +3,10 @@
 class Book
 {
 public:
+/*
+Для определения виртуальной функции в базовом классе функция определяется с ключевым словом virtual. 
+Причем данное ключевое слово можно применить к функции, если она определена внутри класса. А производный класс может переопределить ее поведение.
+*/
 	Book(std::string title, unsigned pages) : title{ title }, pages{ pages } {}
 	std::string getTitle() const { return title; }
 	unsigned getPages() const { return pages; }
