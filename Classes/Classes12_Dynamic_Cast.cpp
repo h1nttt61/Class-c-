@@ -49,7 +49,11 @@ public:
 */
 int main()
 {
+
 	/*Ebook cppbook{"About C++", 350, 6};
+	//Чтобы динамическое преобразование было возможно, базовые классы определяют виртуальную функцию print.
+	Ebook cppbook{ "About C++", 350, 6 };
+
 	Book* book = &cppbook;  // указывает на объект Ebook
 	// дdynamic cast Book to Ebook
 	Ebook* ebook{ dynamic_cast<Ebook*>(book) };
