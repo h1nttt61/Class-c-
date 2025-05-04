@@ -36,7 +36,7 @@ void main()
 	Employee sam{ "Sam", "T-bank" };
 	Person& person2{ sam };
 	person2.print();
-
+// обратное преобразование - из базового типа в производный
 	Employee dem{ "Dem", "Sberbank" };
 
 	Person* person3{ &dem };
@@ -44,7 +44,7 @@ void main()
 	Employee* employee{ static_cast<Employee*>(person3) };
 	employee->print();
 	std::cout << employee->GetCompany() << std::endl;
-
+//smart-указатели на базовый класс также могут указывать на объект производного класса
 	std::unique_ptr<Person> bob2{ std::make_unique<Employee>("Bob", "Google") };
 	bob2->print();
 }
