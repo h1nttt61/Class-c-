@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes13_Virtual_Funcs_Abstract_classcpp.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="Classes13_Virtual_Funcs_Abstract_classcpp_2.cpp">
+      <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
