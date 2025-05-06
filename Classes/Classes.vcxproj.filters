@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes13_Virtual_Funcs_Abstract_classcpp_2.cpp">
-      <Filter>Файлы ресурсов</Filter>
+    <ClCompile Include="Classes14_Operator_overloading.cpp">
+      <Filter>Файлы заголовков</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

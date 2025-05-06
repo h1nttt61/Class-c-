@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes13_Virtual_Funcs_Abstract_classcpp_2.cpp" />
+    <ClCompile Include="Classes14_Operator_overloading.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
