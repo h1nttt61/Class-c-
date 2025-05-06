@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes14_Operator_overloading.cpp">
+    <ClCompile Include="Classes14_Operator_reassignment.cpp">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
   </ItemGroup>
