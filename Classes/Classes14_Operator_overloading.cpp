@@ -8,15 +8,13 @@ public:
 	{
 		std::cout << "Value: " << value << std::endl;
 	}
-	Counter operator + (const Counter& couter) const
-	{
-		return Counter{value + couter.value};
-	}
-private:
 	int value;
 };
 
-
+Counter operator + (const Counter& c1 , const Counter& c2)
+{
+	return Counter{ c1.value + c2.value };
+}
 
 void main()
 {
