@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes12_Dynamic_Cast.cpp">
+    <ClCompile Include="Classes13_Virtual_Funcs_Abstract_classcpp.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
