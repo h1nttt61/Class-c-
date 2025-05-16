@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes15_OverrideAssignmentOperator.cpp" />
+    <ClCompile Include="Classes15_OverrideAsgnmentCopyPointer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
